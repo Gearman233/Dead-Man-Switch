@@ -338,7 +338,7 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Bullet_DMS_AMR</defaultProjectile>
+				<defaultProjectile>Bullet_DMS_DMR</defaultProjectile>
 				<warmupTime>3</warmupTime>
 				<range>43.9</range>
 				<burstShotCount>2</burstShotCount>
@@ -362,6 +362,23 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_DMS_DMR</defName>
+		<label>heavy rifle bullet</label>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Big</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<stoppingPower>2.5</stoppingPower>
+			<armorPenetrationBase>0.4</armorPenetrationBase>
+			<damageAmountBase>31</damageAmountBase>
+			<speed>90</speed>
+		</projectile>
+	</ThingDef>
+	
 	<!--AMR-->
 	<ThingDef ParentName="DMS_AutomatroidGun">
 		<defName>DMS_AntiMaterialRifle</defName>
@@ -407,7 +424,7 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Bullet_DMS_AMR</defaultProjectile>
+				<defaultProjectile>Bullet_DMS_AMSR</defaultProjectile>
 				<warmupTime>3.0</warmupTime>
 				<burstShotCount>1</burstShotCount>
 				<range>47.9</range>
@@ -429,6 +446,22 @@
 				<EquippableDef>StandardAutomatroid</EquippableDef>
 			</li>
 		</modExtensions>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_DMS_AMSR</defName>
+		<label>Anti material bullet</label>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Big</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<stoppingPower>2.5</stoppingPower>
+			<armorPenetrationBase>0.4</armorPenetrationBase>
+			<damageAmountBase>40</damageAmountBase>
+			<speed>90</speed>
+		</projectile>
 	</ThingDef>
 
 	<!--狙擊榴彈發射器-->

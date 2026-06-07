@@ -46,7 +46,7 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Bullet_AutocannonTurret</defaultProjectile>
+				<defaultProjectile>Bullet_DMS_SniperCannon</defaultProjectile>
 				<warmupTime>2.0</warmupTime>
 				<range>49.9</range>
 				<soundCast>DMS_MachineGunHeavy_Shot</soundCast>
@@ -67,6 +67,22 @@
 				<EquippableDef>TransHeavyAutomatroid</EquippableDef>
 			</li>
 		</modExtensions>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_DMS_SniperCannon</defName>
+		<label>sniper cannon bullet</label>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Big</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<stoppingPower>2.5</stoppingPower>
+			<armorPenetrationBase>0.4</armorPenetrationBase>
+			<damageAmountBase>70</damageAmountBase>
+			<speed>120</speed>
+		</projectile>
 	</ThingDef>
 
 	<!--HMG-->
